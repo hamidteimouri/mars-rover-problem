@@ -70,9 +70,9 @@ while (true) {
     for ($i = 0; $i <= 3; $i++) {
         array_push($lines, fgets(STDIN));
     }
-    $area = new Rover((int)$lines[0][0], (int)$lines[0][2], (string)$lines[0][4]);
-    $area->start($lines[1]);
-    $area2 = new Rover((int)$lines[2][4], (int)$lines[2][4], (string)$lines[2][4]);
-    $area2->start($lines[3]);
+    $rover = new Rover((int)$lines[0][0], (int)$lines[0][2], (string)$lines[0][4]);
+    $rover->start($lines[1]);
+    $rover = new Rover((int)$lines[2][4], (int)$lines[2][4], (string)$lines[2][4]);
+    $rover->start($lines[3]);
     die("\nfinished\n");
 }
